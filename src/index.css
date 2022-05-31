@@ -1,0 +1,23 @@
+
+.Table > table, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+.Table > p {
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.Table > table > th {
+    color: blueviolet;
+}
+
+.Table > table{
+    height: 300px;
+    width: 500px;
+}
+
+.Header, h2 {
+    color: blueviolet;
+}
