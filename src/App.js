@@ -66,13 +66,9 @@ function Table(){
     },[]);
     
 
-    const bids = []
-    const lows = []
-
-
     return(
         <div className="Table">
-            <p>Tabela de cotação - {new Date().toLocaleDateString()}, {<Clock/>}</p>
+            <p>Tabela de cotações - {new Date().toLocaleDateString()}, {<Clock/>}</p>
             <table>
                 <tr>
                     <th>Moeda</th>
@@ -81,28 +77,28 @@ function Table(){
                 </tr>
                 <tr>
                     <td>USD</td>
-                    <td>{moedas?.USDBRL.bid}</td>
-                    <td>{moedas?.USDBRL.low}</td>
+                    <td>{Number(moedas?.USDBRL.bid).toLocaleString('pt-br',{style:'currency',currency:'BRL'})}</td>
+                    <td>{Number(moedas?.USDBRL.low).toLocaleString('pt-br',{style:'currency',currency:'BRL'})}</td>
                 </tr>
                 <tr>
                     <td>CAD</td>
-                    <td>{moedas?.CADBRL.bid}</td>
-                    <td>{moedas?.CADBRL.low}</td>
+                    <td>{Number(moedas?.CADBRL.bid).toLocaleString('pt-br',{style:'currency',currency:'BRL'})}</td>
+                    <td>{Number(moedas?.CADBRL.low).toLocaleString('pt-br',{style:'currency',currency:'BRL'})}</td>
                 </tr>
                 <tr>
                     <td>EUR</td>
-                    <td>{moedas?.EURBRL.bid}</td>
-                    <td>{moedas?.EURBRL.low}</td>
+                    <td>{Number(moedas?.EURBRL.bid).toLocaleString('pt-br',{style:'currency',currency:'BRL'})}</td>
+                    <td>{Number(moedas?.EURBRL.low).toLocaleString('pt-br',{style:'currency',currency:'BRL'})}</td>
                 </tr>
                 <tr>
                     <td>BOB</td>
-                    <td>{moedas?.BOBBRL.bid}</td>
-                    <td>{moedas?.BOBBRL.low}</td>
+                    <td>{Number(moedas?.BOBBRL.bid).toLocaleString('pt-br',{style:'currency',currency:'BRL'})}</td>
+                    <td>{Number(moedas?.BOBBRL.low).toLocaleString('pt-br',{style:'currency',currency:'BRL'})}</td>
                 </tr>
                 <tr>
                     <td>CHF</td>
-                    <td>{moedas?.CHFBRL.bid}</td>
-                    <td>{moedas?.CHFBRL.low}</td>
+                    <td>{Number(moedas?.CHFBRL.bid).toLocaleString('pt-br',{style:'currency',currency:'BRL'})}</td>
+                    <td>{Number(moedas?.CHFBRL.low).toLocaleString('pt-br',{style:'currency',currency:'BRL'})}</td>
                 </tr>
             </table>
         </div>

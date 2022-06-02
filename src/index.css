@@ -1,6 +1,16 @@
 
+.Table > table {
+    text-align: center;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.295);
+}
+
+.Table > table > tr > th {
+    background-color: chartreuse;
+    color: black;
+}
+
 .Table > table, th, td {
-    border: 2px solid black;
+    border: 1px solid black;
     border-collapse: collapse;
 }
 
@@ -15,7 +25,7 @@
 
 .Table > table{
     height: 300px;
-    width: 500px;
+    width: 100%;
 }
 
 .Header, h2 {
